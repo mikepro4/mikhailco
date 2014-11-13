@@ -21,10 +21,11 @@
 }
 
 a {
-  color: @grayBlue;
-  text-decoration: none;
   .transition(color 0.2s ease-in-out);
   .user-select(none);
+  color: @grayBlue;
+  text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     color: @blue;

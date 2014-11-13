@@ -34,18 +34,18 @@ if (Social.find().count() === 0) {
         url: 'http://www.linkedin.com/in/mikepro4'
     });
 
-    Social.insert({
-        network: 'Angellist',
-        url: 'https://angel.co/mikepro'
-    });
+//    Social.insert({
+//        network: 'Angellist',
+//        url: 'https://angel.co/mikepro'
+//    });
 
     Social.insert({
         network: 'Soundcloud',
         url: 'https://soundcloud.com/dhbound'
     });
 
-    Social.insert({
-        network: 'Splice',
-        url: 'https://splice.com/mikhail'
-    });
+//    Social.insert({
+//        network: 'Splice',
+//        url: 'https://splice.com/mikhail'
+//    });
 }

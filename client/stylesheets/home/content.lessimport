@@ -8,10 +8,13 @@
     .display(relative);
     font-family: @font-a-bold;
     text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: .5px;
-    line-height: 1.3em;
     margin: 0 0 5px 0;
+
+    h1 {
+      font-size: 13px;
+      letter-spacing: 1px;
+      line-height: 1.3em;
+    }
   }
 
   .user_position {
@@ -54,8 +57,39 @@
     p {
       opacity: .5;
       margin: 0 0 20px 0;
-      font-size: 16px;
       letter-spacing: .3px;
+
+      @media @screen1024 {
+        font-size: 11px;
+      }
+
+      @media @screen1280 {
+        font-size: 13px;
+      }
+
+      @media @screen1366 {
+        font-size: 14px;
+      }
+
+      @media @screen1440 {
+        font-size: 16px;
+      }
+
+      @media @screen1680 {
+        font-size: 18px;
+      }
+
+      @media @screen1920 {
+        font-size: 20px;
+      }
+
+      @media @screen2560 {
+        font-size: 24px;
+      }
+
+      @media @mobile {
+        font-size: 12px;
+      }
     }
 
     a {
