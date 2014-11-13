@@ -1,0 +1,32 @@
+.grid {
+  .display(absolute);
+  .stretch();
+  .make-row();
+  opacity: 0;
+  z-index: @layer0;
+  min-width: 1200px;
+
+  li {
+    .display(relative);
+    .make-column(1, 20);
+    background: #fff;
+    height: 2000px;
+
+    &:before {
+      content: '';
+      .display(absolute);
+      .topLeft(0, 10px);
+      .bottomRight(0, 10px);
+    }
+  }
+
+  &.show_grid {
+    opacity: .05;
+
+    li {
+      &:before {
+        background: red;
+      }
+    }
+  }
+}

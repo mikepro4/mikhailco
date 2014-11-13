@@ -20,3 +20,5 @@
 .make-column-offset(@columns) {
   margin-left: percentage(@columns / @grid-columns);
 }
+
+@single-column: percentage(1 / @grid-columns);

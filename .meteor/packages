@@ -10,4 +10,6 @@ iron:router
 accounts-ui
 accounts-password
 underscore
+percolate:velocityjs
+mrt:fittext
 

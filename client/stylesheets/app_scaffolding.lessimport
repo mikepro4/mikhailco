@@ -9,12 +9,11 @@ html {
 
 body {
   .display(absolute);
-  .size(100%, 100%);
-  .topLeft(0, 0);
+  .stretch();
   -webkit-font-smoothing: subpixel-antialiased;
   background: @body-bg;
   overflow: hidden;
-  font: normal normal normal @font-size-base/@line-height-base "Light";
+  font: normal normal normal @font-size-base/@line-height-base @font-a-light;
   -webkit-overflow-scrolling: touch;
   color: @grayBlue;
 }
@@ -29,10 +28,12 @@ body {
     .display(absolute);
     .stretch();
     z-index: @layer1;
+    overflow: hidden;
 
     section {
       .display(absolute);
       .stretch();
+      overflow: hidden;
 
       // Home Screen
       &.home {

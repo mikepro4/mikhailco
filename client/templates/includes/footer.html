@@ -1,0 +1,19 @@
+<template name="footer">
+
+    <footer class="contacts_footer">
+
+        <nav class="social_links">
+            <ul>
+                {{#each social}}
+                {{> socialItem}}
+                {{/each}}
+            </ul>
+        </nav>
+
+        <aside>
+            <a href="{{dcdnt.url}}" title="Decadent Life" class="dcdnt_link">#DCDNT</a>
+        </aside>
+
+    </footer>
+
+</template>

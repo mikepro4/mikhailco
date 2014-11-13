@@ -3,3 +3,4 @@ Template.contacts.helpers({
         return User.findOne();
     }
 })
+
