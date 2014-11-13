@@ -1,6 +1,14 @@
 Template.home.events({
-    'click .contact': function (e) {
-        console.log(e);
+    'click .user_phone': function (e) {
+
+        Meteor.call('messageSend', text, function(error) {
+            if (error){
+                console.log('error')
+            } else {
+                console.log('ok')
+            }
+        });
+
     }
 })
 
