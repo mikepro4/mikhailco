@@ -5,5 +5,5 @@ Template.home.events({
 })
 
 Template.home.rendered = function () {
-    $('h1').fitText(2.1);
+    $('.home_content h1').fitText(2.1);
 }

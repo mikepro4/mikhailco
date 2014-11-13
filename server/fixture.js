@@ -15,13 +15,13 @@ if (Social.find().count() === 0) {
     });
 
     Social.insert({
-        network: 'Codepen',
-        url: 'http://codepen.io/mikepro4'
+        network: 'Github',
+        url: 'https://github.com/mikepro4'
     });
 
     Social.insert({
-        network: 'Github',
-        url: 'https://github.com/mikepro4'
+        network: 'Codepen',
+        url: 'http://codepen.io/mikepro4'
     });
 
     Social.insert({
