@@ -1,0 +1,47 @@
+//
+// Application Scaffolding
+// --------------------------------------------------
+
+html {
+  .size(100%, 100%);
+  overflow: hidden;
+}
+
+body {
+  .display(absolute);
+  .size(100%, 100%);
+  .topLeft(0, 0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  background: @body-bg;
+  overflow: hidden;
+  font: normal normal normal @font-size-base/@line-height-base "Light";
+  -webkit-overflow-scrolling: touch;
+  color: @grayBlue;
+}
+
+.application_wrapper {
+  .display(absolute);
+  .stretch();
+  overflow: hidden;
+  z-index: @layer-top;
+
+  .application_content {
+    .display(absolute);
+    .stretch();
+    z-index: @layer1;
+
+    section {
+      .display(absolute);
+      .stretch();
+
+      // Home Screen
+      &.home {
+        @import "home/content.lessimport";
+      }
+
+    }
+
+  }
+
+}
+

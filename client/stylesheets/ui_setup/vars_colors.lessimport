@@ -1,0 +1,9 @@
+@body-bg: #fafafa;
+
+//@blue: #0c35ff;
+@blue: #1e56ff;
+@grayBlue: #313646;
+@gray: #f7f7f7;
+@darkGray: #cbced6;
+@green: #03eed1;
+

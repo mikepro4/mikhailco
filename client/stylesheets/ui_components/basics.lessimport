@@ -1,0 +1,105 @@
+// Selection
+// -------------------------
+
+::selection {
+  background: @green;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: @green;
+  color: #fff;
+}
+
+// Links
+// -------------------------
+
+* {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: @grayBlue;
+  text-decoration: none;
+  .transition(color 0.2s ease-in-out);
+  .user-select(none);
+
+  &:hover {
+    color: @blue;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: lighten(@blue, 20%);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+// Body text
+// -------------------------
+
+p {
+  font-size: @font-size-base;
+  color: @grayBlue;
+  line-height: @line-height-base;
+  margin: 0 0 (@line-height-computed / 2);
+}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal;
+  line-height: @line-height-base;
+  color: @grayBlue;
+
+  small {
+    color: lighten(@grayBlue, 20%);
+  }
+}
+
+h1, .h1 {
+  font-size: @font-size-h1;
+}
+
+h2, .h2 {
+  font-size: @font-size-h2;
+}
+
+h3, .h3 {
+  font-size: @font-size-h3;
+}
+
+h4, .h4 {
+  font-size: @font-size-h4;
+}
+
+h5, .h5 {
+  font-size: @font-size-h5;
+}
+
+h6, .h6 {
+  font-size: @font-size-h6;
+}
+
+// Table
+// -------------------------
+
+table {
+  width: 100%;
+
+  thead, tr, th, td {
+    vertical-align: middle;
+  }
+
+  td {
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Light";
+  src: url('/fonts/light.eot');
+  src: local('☺'),
+  url('/fonts/light.eot') format('embedded-opentype'),
+  url('/fonts/light.woff2') format('woff2'),
+  url('/fonts/light.woff') format('woff'),
+  url('/fonts/light.svg#Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url('/fonts/regular.eot');
+  src: local('☺'),
+  url('/fonts/regular.eot') format('embedded-opentype'),
+  url('/fonts/regular.woff2') format('woff2'),
+  url('/fonts/regular.woff') format('woff'),
+  url('/fonts/regular.svg#Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url('/fonts/bold.eot');
+  src: local('☺'),
+  url('/fonts/bold.eot') format('embedded-opentype'),
+  url('/fonts/bold.woff2') format('woff2'),
+  url('/fonts/bold.woff') format('woff'),
+  url('/fonts/bold.svg#Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
