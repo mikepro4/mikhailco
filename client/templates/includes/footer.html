@@ -12,6 +12,7 @@
 
         <aside>
             <a href="{{dcdnt.url}}" title="Decadent Life" class="dcdnt_link">#DCDNT</a>
+            {{#if currentUser}}<a href="{{pathFor 'admin'}}">Admin</a>{{/if}}
         </aside>
 
     </footer>
