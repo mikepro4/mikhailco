@@ -1,25 +1,35 @@
 <template name="home">
     <section class="home">
-       {{> user}}
-       {{> contacts}}
 
-        <div class="home_content_wrapper">
+      <article class="home_content">
 
-            <div class="home_content">
-                <h1>I create clear interfaces for complex products <br>
-                    using tools like Backbone, Meteor & Node.js</h1>
+        <div class="home_inner_content">
+          <hgroup class="home_headlines">
+              <h1 class="js-heading-1 name">Mikhail Proniushkin</h1>
+              <h1 class="js-heading-2">UX/UI Designer</h1>
+              <h1 class="js-heading-3">Front-end Developer</h1>
+              <h1 class="js-heading-4">New York</h1>
+          </hgroup>
 
-                <p>I also play synthesizers, make beats, like mountains, <br>
-                    design UI interactions and develop front-end heavy apps.</p>
+          <nav class="social_links">
+            <ul>
+              <li><a href="#" class="social_link" target="_blank"><span>Dribbble</span></a></li>
+              <li><a href="#" class="social_link" target="_blank"><span>Github</span></a></li>
+              <li><a href="#" class="social_link" target="_blank"><span>Codepen</span></a></li>
+              <li><a href="#" class="social_link" target="_blank"><span>Linkedin</span></a></li>
+              <li><a href="#" class="social_link" target="_blank"><span>Tumblr</span></a></li>
+            </ul>
+          </nav>
 
-                <a class="contact_me">
-                    <span>Contact me</span>
-                    <i> ></i>
-                </a>
-            </div>
-
+          <aside class="contacts">
+            <ul>
+              <li><a href="#" class="email_link"><span>contact@mikhail.co</span></a></li>
+              <li><span>1.718.510.4402</span></li>
+            </ul>
+          </aside>
         </div>
 
-        {{> footer}}
+      </article>
+
     </section>
 </template>

@@ -28,7 +28,7 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: @blue;
+    color: @green;
     text-decoration: none;
   }
 
@@ -61,7 +61,6 @@ i, b, strong {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: normal;
   line-height: @line-height-base;
   color: @grayBlue;
 
@@ -107,4 +106,13 @@ table {
   td {
     padding-right: 20px;
   }
+}
+
+.none {
+  display: none;
+}
+
+.dg.ac {
+  .display(absolute);
+  z-index: @layer-top !important;
 }

@@ -13,9 +13,9 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
   background: @body-bg;
   overflow: hidden;
-  font: normal normal normal @font-size-base/@line-height-base @font-a-light;
+  font: normal normal normal @font-size-base/@line-height-base @font-ff-mark;
   -webkit-overflow-scrolling: touch;
-  color: @grayBlue;
+  color: #fff;
 }
 
 .application_wrapper {
@@ -34,10 +34,10 @@ body {
       .display(absolute);
       .stretch();
       overflow: hidden;
-
+      
       // Home Screen
       &.home {
-        @import "home/content.lessimport";
+        @import "home/content.import.less";
       }
 
     }
