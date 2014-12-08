@@ -8,11 +8,10 @@ less
 iron:router
 underscore
 percolate:velocityjs
-mrt:fittext
 email
 accounts-password
 alanning:roles
 accounts-base
 accounts-ui
-reywood:iron-router-ga
+percolatestudio:segment.io
 
