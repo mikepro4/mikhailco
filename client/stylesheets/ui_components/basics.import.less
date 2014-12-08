@@ -42,6 +42,43 @@ a {
 
 }
 
+.line-hover {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    .transition(all .8s cubic-bezier(0.19, 1, .22, 1));
+
+    span {
+      .transition(all 2s cubic-bezier(0.19, 1, .22, 1));
+    }
+
+    &:after {
+        content: '';
+        .display(absolute);
+        .topLeft(100%, 0);
+        .size(100%, 2px);
+        margin-top: -1px;
+        background-color: #fff;
+        .transform(translateX(-108%));
+        .transition(transform .8s cubic-bezier(0.19, 1, .22, 1));
+        -webkit-transition-delay: .1s;
+        transition-delay: .1s;
+        opacity: 0;
+    }
+
+    &:hover {
+      span {
+        opacity: .3;
+      }
+
+      &:after {
+        .transform(translateX(108%));
+        opacity: 1;
+      }
+    }
+}
+
 // Body text
 // -------------------------
 

@@ -199,14 +199,20 @@ article.home_content {
 
       li {
         .display(relative);
-        color: @gray;
+        color: darken(@gray, 10%);
         font-size: .8vw;
         letter-spacing: .5px;
         line-height: 1.7em;
-        opacity: .65;
 
         a {
-          color: @gray;
+          color: darken(@gray, 10%);
+
+          &:hover {
+            span {
+              opacity: 1;
+              color: #fff;
+            }
+          }
         }
 
         @media @screen1024 {
