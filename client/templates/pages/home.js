@@ -5,15 +5,18 @@ Template.home.events({
         parser.href = url
 
         analytics.track({
+          user: 'all',
           event: 'Click Social Link',
-          url: parser.hostname
+          properties: {
+             url: parser.hostname
+          }  
         });
     },
 
     'click .email_link': function(e, tmpl) {
         analytics.track({
-          userId: '12345',
-          event: 'Click email Link'
+            user: 'all',
+            event: 'Click email Link'
         });
     }
 })
