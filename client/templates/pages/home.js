@@ -4,20 +4,13 @@ Template.home.events({
         var parser = document.createElement('a');
         parser.href = url
 
-        analytics.track({
-          user: 'all',
-          event: 'Click Social Link',
-          properties: {
-             url: parser.hostname
-          }  
+        analytics.track('Social Link', {
+            url: parser.hostname
         });
     },
 
     'click .email_link': function(e, tmpl) {
-        analytics.track({
-            user: 'all',
-            event: 'Click email Link'
-        });
+        analytics.track('Email Link');
     }
 })
 
